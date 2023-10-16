@@ -4,16 +4,16 @@
 #include <iomanip>	
 #include <conio.h>	
 #include <time.h>	
-#include "y:\b11\console(v1.8).h" 
+#include "console(v1.9).h" 
 #include <windows.h>
 
 using namespace std; 
 
 void main()
 {
-	char réponse1, réponse2;
+	char rÃ©ponse1, rÃ©ponse2;
 	int   jourInput, moisInput, anneeInput, jourSemaine, nbTotalJoursEcoules, l, c, jj,
-		linecalendrier = 2, charjourcalen = 2; //max de 6 sinon ça pète; 
+		linecalendrier = 2, charjourcalen = 2; //max of 6
 	int joursMois[12] = { 31,28,31,30,31,30,31,31,30,31,30,31 };
 	const int espaCalendrier = 8, tab = 8; 
 	const char separtioncalen = '_';
@@ -103,11 +103,11 @@ void main()
 		c = wherex(); l = wherey();
 		do
 		{
-			réponse1 = toupper(_getche());
+			rÃ©ponse1 = toupper(_getche());
 			gotoxy(c, l);
-		} while (réponse1 != 'O' && réponse1 != 'N');
+		} while (rÃ©ponse1 != 'O' && rÃ©ponse1 != 'N');
 
-		if (réponse1 == 'O')
+		if (rÃ©ponse1 == 'O')
 		{
 			clrscr();
 
@@ -154,13 +154,13 @@ void main()
 		c = wherex(); l = wherey();
 		do
 		{
-			réponse2 = toupper(_getche());
+			rÃ©ponse2 = toupper(_getche());
 			gotoxy(c, l);
-		} while (réponse2 != 'O' && réponse2 != 'N');
+		} while (rÃ©ponse2 != 'O' && rÃ©ponse2 != 'N');
 
 		clrscr();
 
-	}while (réponse2 != 'N');
+	}while (rÃ©ponse2 != 'N');
 
 	gotoxy((120 - textaffichage[3].size()) / 2, 15);
 	cout << textaffichage[3];
